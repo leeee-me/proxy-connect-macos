@@ -23,4 +23,4 @@ LIBRARIES = -L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platfo
 LIBS = -lresolv
 
 connect: connect.c
-	gcc-mp-10 -o $@ $(INCLUDES) $(LIBRARIES) $(OPTFLAGS) $(WARNFLAGS) $^ $(LIBS)
+	gcc -o $@ $(INCLUDES) $(LIBRARIES) $(OPTFLAGS) $(WARNFLAGS) $^ $(LIBS)
